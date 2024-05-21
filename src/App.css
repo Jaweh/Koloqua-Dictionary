@@ -109,6 +109,7 @@
   --slowest-transition: all 1s ease;
   --normal-transition: all 0.3s ease;
   --fast-transition: all 0.1s ease;
+  /* #E14445 */
 }
 
 
@@ -147,10 +148,11 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-
 /* Set core body defaults */
 body {
   background-color: var(--backgroundColor);
+  background-image: linear-gradient(90deg, #ffffff 0%, #78b6fdcf 74%);
+  background-size: cover;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: var(--font);
@@ -178,19 +180,27 @@ select {
   font: inherit;
 }
 
-
-
-.app-wrapper {}
+.app-wrapper {
+  min-height: 100vh;
+}
 
 .top-bar {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
-.nav-container {
+.logo {
+  color: var(--koloRed);
+  font-size: 18px;
+  font-weight: var(--boldFontWeight);
+}
+
+.logo span {
+  color: var(--koloLightBlue);
+  font-weight: var(--normalFontWeight);
 }
 
 .nav-container ul {
@@ -209,9 +219,15 @@ select {
   padding: 5px 10px;
   margin: 0 10px;
   font-family: var(--font);
+  font-size: 16px;
   font-weight: var(--normalFontWeight);
-  color: var(--koloLightBlue);
+  color: var(--koloBlue);
   transition: var(--normal-transition);
+}
+
+.special-nav {
+  color: var(--koloBlue);
+  font-weight: var(--boldFontWeight);
 }
 
 .nav-container ul li a:hover {
@@ -220,7 +236,3 @@ select {
   font-weight: var(--slightlyBoldFontWeight);
   transition: var(--normal-transition);
 }
-
-
-
-.component-wrapper {}

@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div className="app-wrapper">
         <div className="top-bar">
-          <div className="logo-area">LOGO</div>
+          <div className="logo">Koloqua <span>Dictionary</span></div>
           <div className="nav-wrapper"><Navbar /></div>
         </div>
         <div className="main-content-area">

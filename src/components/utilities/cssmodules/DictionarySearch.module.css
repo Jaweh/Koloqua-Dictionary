@@ -1,0 +1,109 @@
+  
+  :root {
+    --backgroundColor: #EEEEEE;
+    --koloRed: #DA1212;
+    --koloBlue: #041562;
+    --koloLightBlue: #11468F;
+    --font: 'Poppins';
+    --normalFontWeight: 400;
+    --slightlyBoldFontWeight: 500;
+    --boldFontWeight: 600;
+    --thickFontWeight: 700;
+    --thickerFontWeight: 800;
+    --thickestFontWeight: 900;
+    --slow-transition: all 0.5s ease;
+    --slowest-transition: all 1s ease;
+    --normal-transition: all 0.3s ease;
+    --fast-transition: all 0.1s ease;
+    /* #E14445 */
+  }
+  
+
+.dictionary_component_splitter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 3em 5em;
+    /* background-color: rgba(244, 244, 22, 0.902); */
+}
+
+.dictionary_component_verbal {
+    display: block;
+    width: 50%;
+}
+
+.dictionary_component_header {
+    font-size: 2em;
+    font-weight: var(--boldFontWeight);
+}
+
+.dictionary_component_header span {
+    color: var(--koloRed);
+}
+
+.dictionary_component_description {
+    font-size: 15px;
+    font-weight: var(--normalFontWeight);
+}
+
+.dictionary_component_hero_visual {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.dictionary_component_hero_visual_card {
+    width: 100%;
+    height: auto;
+    /* background-color: var(--koloLightBlue); */
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    border-radius: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    /* transform: rotate(2deg); */
+}
+
+.dictionary_component_hero_visual_card_quotemark_left,
+.dictionary_component_hero_visual_card_quotemark_right {
+    font-family: sans-serif;
+    font-size: 5em;
+    color: #fff;
+    padding: 0;
+}
+
+.dictionary_component_hero_visual_card_quotemark_left {
+    text-align: left;
+}
+
+.dictionary_component_hero_visual_card_quotemark_right {
+    text-align: right;
+}
+
+.dictionary_component_hero_visual_card_quote {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: var(--boldFontWeight);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.dictionary_component_hero_visual_card_quote_interpretation {
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade {
+    opacity: 0;
+}
