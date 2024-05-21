@@ -1,0 +1,226 @@
+/* Font Declarations */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-BlackItalic.ttf');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-ExtraBold.ttf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-ExtraBoldItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-SemiBoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-MediumItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-LightItalic.ttf');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-ExtraLight.ttf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-ExtraLightItalic.ttf');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Thin.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-ThinItalic.ttf');
+  font-weight: 100;
+  font-style: italic;
+}
+
+:root {
+  --backgroundColor: #EEEEEE;
+  --koloRed: #DA1212;
+  --koloBlue: #041562;
+  --koloLightBlue: #11468F;
+  --font: 'Poppins';
+  --normalFontWeight: 400;
+  --slightlyBoldFontWeight: 500;
+  --boldFontWeight: 600;
+  --thickFontWeight: 700;
+  --thickerFontWeight: 800;
+  --thickestFontWeight: 900;
+  --slow-transition: all 0.5s ease;
+  --slowest-transition: all 1s ease;
+  --normal-transition: all 0.3s ease;
+  --fast-transition: all 0.1s ease;
+}
+
+
+
+
+                              /* CSS Reset starts here */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+/* Set core body defaults */
+body {
+  background-color: var(--backgroundColor);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+.app-wrapper {}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-container {
+}
+
+.nav-container ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container ul li {
+  list-style: none;
+}
+
+.nav-container ul li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 10px;
+  font-family: var(--font);
+  font-weight: var(--normalFontWeight);
+  color: var(--koloLightBlue);
+  transition: var(--normal-transition);
+}
+
+.nav-container ul li a:hover {
+  padding: 5px 10px;
+  color: var(--koloBlue);
+  font-weight: var(--slightlyBoldFontWeight);
+  transition: var(--normal-transition);
+}
+
+
+
+.component-wrapper {}
